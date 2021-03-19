@@ -1,0 +1,54 @@
+{
+  "name": "@toolz/session-storage",
+  "version": "1.0.4",
+  "description": "A wrapper for session storage that maintains integrity of data types and fails gracefully if session storage is not available",
+  "keywords": [
+    "session storage",
+    "sessionStorage",
+    "javascript"
+  ],
+  "homepage": "https://github.com/bytebodger/session-storage",
+  "bugs": {
+    "email": "adam.davis@hashverify.com",
+    "url": "https://github.com/bytebodger/session-storage/issues"
+  },
+  "main": "src/session.js",
+  "scripts": {
+    "test": "jest --transformIgnorePatterns \"node_modules/(?!@toolz/session-storage)/\" --env=jsdom"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bytebodger/session-storage.git"
+  },
+  "author": "Adam Nathaniel Davis <adam.davis@hashverify.com> (https://writing.voyage)",
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@toolz/allow": "^1.1.2",
+    "@toolz/session-storage-is-available": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.1",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.13.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.12.13",
+    "babel-jest": "^26.6.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-jest": "^26.6.2",
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3",
+    "jest-matcher-one-of": "^1.0.2",
+    "nodemon": "^2.0.4"
+  },
+  "browserslist": [
+    "last 1 chrome version",
+    "last 1 firefox version",
+    "last 1 safari version",
+    "last 1 ie version"
+  ]
+}
